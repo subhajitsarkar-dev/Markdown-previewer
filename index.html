@@ -5,9 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Markdown Previewer</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   </head>
   <body>
-    <div class="">hellow</div>
+    <div class="display">
+      <div class="left-side">
+        <div class="header">
+          <h1>Markdown</h1>
+          <button id="clear-btn">Clear</button>
+        </div>
+        <textarea
+          id="markdown-input"
+          placeholder="Type Markdown here..."
+        ></textarea>
+      </div>
+      <div class="right-side">
+        <h1>Preview</h1>
+        <textarea id="markdown-input" disabled></textarea>
+      </div>
+    </div>
+
     <script src="app.js"></script>
   </body>
 </html>
