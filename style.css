@@ -59,25 +59,10 @@ body {
 
 textarea {
   width: 450px;
-  min-height: 100px;
-  max-height: 500px;
+  height: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  font-size: 16px;
-  resize: vertical;
-}
-
-.right-side textarea {
-  width: 420px;
-  min-height: 100px;
-  max-height: 500px;
-  padding: 10px;
-  border: 0.5px solid #cccccc38;
-  border-radius: 8px;
-  font-size: 16px;
-  background-color: transparent;
-  color: white;
   resize: vertical;
 }
 
@@ -92,4 +77,10 @@ button {
   border-radius: 5px;
   background-color: #414345;
   color: #ccc;
+  cursor: pointer;
+}
+
+.preview {
+  overflow-y: auto;
+  border-radius: 20px;
 }
